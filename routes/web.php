@@ -3,5 +3,6 @@
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
-    return view('home');
+    $number = rand(10001,20001);
+    return view('register', compact('number'));
 });
